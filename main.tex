@@ -93,7 +93,7 @@
 \begin{figure}[!tbp]
 	\centering
 	\includegraphics[width=0.6\textwidth]{pictures/fig_Introduction_rotation_curve_1}\label{fig:f1}
-	\caption{Measured rotational velocities of HI regions in NGC 3198 compared to an idealized Keplerian behavior [Astron. and Astrophys. 223, 47-60]}
+	\caption{{\scriptsize Measured rotational velocities of HI regions in NGC 3198 compared to an idealized Keplerian behavior [Astron. and Astrophys. 223, 47-60]}}
 \end{figure}
 
 \end{frame}
@@ -107,7 +107,7 @@
 \begin{figure}[!tbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{pictures/bulletcluster}\label{fig:f2}
-	\caption{The Bullet cluster, the result of a subcluster (the “bullet”) colliding with the larger galaxy cluster 1E 0657-56  [arXiv:1711.02117]}
+	\caption{{\scriptsize The Bullet cluster, the result of a subcluster (the “bullet”) colliding with the larger galaxy cluster 1E 0657-56  [arXiv:1711.02117]}}
 \end{figure}
 
 \end{frame}
@@ -122,7 +122,7 @@
 \begin{figure}[!tbp]
 	\centering
 	\includegraphics[width=0.9\textwidth]{pictures/pie}\label{fig3}
-	\caption{{\scriptsize Simplified plot showing the estimate abundances}}
+	\caption{{\scriptsize Simplified plot showing the estimate abundances, of the known components of the universe. }}
 	
 \end{figure}
 
@@ -143,32 +143,53 @@
 \end{frame}
 % ------------------------------------------------------------------------------------------------
 
-%\begin{frame}
-%\frametitle{Constrains Direct Detection}
+\begin{frame}
+\frametitle{Collider Detection}
 
-%\begin{figure}[!tbp]
-%	\centering
-%	\includegraphics[width=0.9\textwidth]{pictures/WIPMS}\label{fig:f1}
-%	\caption{{\scriptsize The predicted WIMP-nucleon scattering cross section as a function of WIMP mass.[APS Physics 6, 136] }}
+\begin{alertblock}{Signals}
+	\begin{enumerate}
+		\item Cascades of heavier particles to the DM candidate and SM, as in (\subref{Cascade}).
+		%\item[]
+		\item DM production in association with other SM particles,	like (\subref{DirectProduction}).
+	\end{enumerate}
+\end{alertblock}
+
+\begin{figure}[!h]
 	
-%\end{figure}
+	\begin{subfigure}[b]{0.44\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{pictures/Cascade}
+		\caption{}
+		\label{Cascade}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.44\textwidth}
+		\centering
+		\includegraphics[scale=0.3]{pictures/DirectProduction}
+		\caption{}
+		\label{DirectProduction}
+	\end{subfigure}
 
-%\end{frame}
+\end{figure}
+
+
+
+\end{frame}
+% -------------------------------------------------------------------------
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Model}
 \begin{frame}
 \frametitle{Model}
+\begin{justify}
+
  The VLF model introduce a vector-like charged fermion also $SU(2)_L$ singlet, and a scalar particle. The free Lagrangian reads
  \begin{equation}\nonumber
  \mathcal{L} = \mathcal{L}_{SM} +  m_F \bar{F}F + ( Y_\ell S \bar{F}\ell_R + {\rm h.c.} ) + V(S,H)~;
  \end{equation}\label{EQ}
  
  $m_F$ is the singlet fermion mass parameter, $\ell_R$ are the SM right-handed lepton fields, $Y_\ell$ 
- are the Yukawa couplings. 
- 
- The contribution to the scalar potential is given by
+ are the Yukawa couplings. The contribution to the scalar potential is given by
  
  \begin{equation}\nonumber
  V(S,H) = \frac{m_S^2}{2} S^2 + \frac{\lambda_S}{4} S^4 + \lambda_{SH} S^2|H|^2 ~,
@@ -177,6 +198,7 @@
  with scalar mass parameter $m_S$ and quartic couplings $\lambda_{S}$ and $\lambda_{SH}$.
  
 
+\end{justify}
 
 \end{frame}
 % ------------------------------------------------------------------------------------------------
@@ -198,7 +220,7 @@
 \begin{textblock*}{0.46 \linewidth}(0.25\linewidth,0.25\linewidth) % {block width} (coords)
 	{\small \justifying{
 			
-			The kinetic terms for thevector-like charged fermion reads as follows
+			The kinetic terms for the vector-like charged fermion reads as follows
 			\begin{equation}
 			\mathcal{L} ~ \bar{F}(D_{\mu}\gamma^{\mu})F,
 			\end{equation}
@@ -226,14 +248,13 @@
 	\lambda_{SH}=0;
 	\end{equation}
 	 
-	also we assume that the DM candidate does not couples to the electron.
+	we assume as well, that the DM candidate does not couples to the electron.
 	\begin{equation}\nonumber
 	Y_{e}=0;
 	\end{equation}
 	
 	the remaining parameters, $Y_{\mu}$,$Y_{\tau}$ ,  $m_S$ and  $m_F$ are allowed to vary freely.
-	
-	Also we are searching into the compress mass regime 
+	Furthermore we are searching into the compress mass regime i.e.
 	
 		\begin{equation}\nonumber
 		 \Delta m=m_{F}-m_S\lesssim 50\ \text{GeV}
@@ -259,20 +280,6 @@
 % ------------------------------------------------------------------------------------------------
 
 \section{Collider searches for DM}
-\begin{frame}
-\frametitle{Collider searches for DM}
-
-\begin{alertblock}{Signals}
-	\begin{enumerate}
-		\item Cascades of heavier particles to the DM candidate and SM.
-		\item[]
-		\item DM production in association with other SM particles,	
-	\end{enumerate}
-\end{alertblock}
-
-
-\end{frame}
-% -------------------------------------------------------------------------
 
 %\begin{frame}
 %\frametitle{Experimental Signature}
@@ -306,8 +313,8 @@ The process chows in Figure \ref{TowFerminon}, leads to the signature opposite s
 
 \begin{figure}[!tbp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{pictures/PS}
-	\caption{{\scriptsize $m_F$ vs $\Delta m$. The brown upper region is excluded by Fermi-LAT H.E.E.S, while the combined upper region with light and dark magenta are the prospects for Cherenkov Telescope Array. The Red area is the area where the relic density is not satisfy by the model}}
+	\includegraphics[width=0.85\textwidth]{pictures/LimitPlotsTesis}% while the combined upper region with light and dark magenta are the prospects for Cherenkov Telescope Array.
+	\caption{{\scriptsize $m_F$ vs $\Delta m$. The gray upper region is excluded by Fermi-LAT H.E.E.S, wile the red area is the where the relic density is not satisfy by the model}}
 	\label{fig7}
 \end{figure}
 
@@ -317,13 +324,16 @@ The process chows in Figure \ref{TowFerminon}, leads to the signature opposite s
 % ------------------------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{Background}
-The backgrounds for this process are single top, WZ, and w+jets. This last one being the most important.
+\begin{justify}
+The backgrounds process for this search are the single top, the di-boson $WZ$, and $W+jets$ . The last one being the most important with production cross section three orders larger than the others (see Figure \ref{XSSummary}).
+
+\end{justify}
 
 \begin{figure}[!tbp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{pictures/WPlusJets}\label{fig8}
-	\caption{{\small Some W+jets diagrams}}
-	
+	\includegraphics[width=0.7\textwidth]{pictures/CrossSectionSMProcesses}\label{fig8}
+	\caption{{\scriptsize Summary of the cross section measurements of Standard Model processes [{\tiny https://twiki.cern.ch/twiki/bin/view/CMSPublic/PhysicsResultsCombined}]	}.}
+	\label{XSSummary}
 \end{figure}
 
 \end{frame}
@@ -333,30 +343,12 @@ The backgrounds for this process are single top, WZ, and w+jets. This last one b
 \frametitle{Samples Generation}
 \begin{justify}
 	The Monte Carlo(MC) collision samples for the signal and the BackGrounds (BG) were generated using a combination of MadGraph (version 2.5.5 ) ~%\cite{Alwall2011} 
- for the event generation, Pythia (version 8.233)~  %\cite{Sjostrand:2014zea} 
-for the hadronization and Delphes (version 3.4.1)~  %\cite{deFavereau:2013fsa} 
-for the detector effect emulation.
+	for the event generation, Pythia (version 8.233)~  %\cite{Sjostrand:2014zea} 
+	for the hadronization and Delphes (version 3.4.1)~  %\cite{deFavereau:2013fsa} 
+	for the detector effect emulation.
 \end{justify}
-\begin{table}[]
-	{\centering
-		\begin{tabular}{llll}
-			\hline
-										& \textbf{W+Jets}	& \textbf{WZ}	& \textbf{SingleTop}	\\\hline
-			$\sigma$ (Pb) 				& 3377.37    		& 22.82       	& 288.17     			\\
-			$\sigma\times\mathcal{L}$   & 337737000   		& 2282000     	& 28817000   			\\
-			MC            				& 50214     		& 173715      	& 319006      			\\
-			Weight        				& 6725.95 			& 14.65 		& 90.33					\\\hline
-		
-		\end{tabular}
-		
-		\caption{Weights for the MC samples, based on the expected events.}
-		\label{WeightsSamplesTable}
-	}
-\end{table}
 
 \end{frame}
-
-% ------------------------------------------------------------------------------------------------
 % ------------------------------------------------------------------------------------------------
 
 \begin{frame}
@@ -391,7 +383,7 @@ for the detector effect emulation.
 
 \end{frame}
 
-% ------------------------------------------------------------------------------------------------
+
 % ------------------------------------------------------------------------------------------------
 
 \begin{frame}
@@ -470,18 +462,56 @@ After the tunig we use Rivet[] over the analysis [PhysRevD.96.072005] to compare
 
 \begin{frame}
 \section{Samples Selection}
-\frametitle{Selection}
-The values for the cuts were defined through an optimization process based on the $\frac{S}{\sqrt{S+B}}$, we normalize all MC to $100~\text{fb}^{-1}$ luminosity and the
-signal mass point  $m_{F}=140$GeV vs  $\Delta m=20$GeV
+\frametitle{Selection criteria}
+\begin{justify}
+	The values for the cuts were defined through an optimization process based on both the significance $\mathcal{Z}$ (defined in the \ref{Sig}) and the efficiency of the cut (defined in the \ref{Eff}) of the signal Vs BG 
+	
+	\begin{equation}
+		\mathcal{Z}=\frac{S}{\sqrt{S+B}},\label{Sig}
+	\end{equation}
+	
+	where $S$ and $B$ are the yields for Signal and BG. We normalize all MC to $100~\text{fb}^{-1}$ luminosity and the	signal mass point  $m_{F}=145$ GeV vs  $\Delta m=10$ GeV
 
+	\begin{equation}
+	e_{ff}(\chi)=\frac{\chi_{AC}}{\chi_{BC}},\label{Eff}
+	\end{equation}
+	were $\chi$ can be signal or BG, and the subscripts $BC$ and $AC$ stands for "Before Cuts" and "After Cuts".
 
+\end{justify}
 
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{$m_T$ Selection}
+
+	\begin{justify}
+		{\tiny Most signal (bottom-right figure) events are around $50$ GeV, but for all BG the peak of events is more towards $80$ GeV, especially the $W+Jets$. That is why we chose to make a cut of the type \textbf{Less-Than}.}
+	\end{justify}
+
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.75\textwidth, height=0.63\textheight]{pictures/Selection/m_T/All-m_T}
+		\caption{{\scriptsize $M_T(\mu,p^{miss}_T)$ histograms for the signal and each background sample. The bin-width is 5 GeV. Only the basic selection has been applied.}}
+		\label{All-m_T}
+	
+	\end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{$m_T$ Selection}
 \begin{figure}[!h]
 	
 	\centering
-	\includegraphics[scale=0.45]{pictures/Selection/SigLT_MT}
-	\caption{Significance of the cut (type less-
-		than) for $m_T(\mu,p_{T}^{Miss}$ \label{}}
+	\includegraphics[scale=0.45]{pictures/Selection/m_T/Eff-m_T}
+	\caption{{\scriptsize $M_T(\mu,p^{miss}_T)$ Efficiency plots for the signal and each background sample. The main BG is less than $1\%$ before $40$ GeV, although the signal is more than $50\%$.}}
+	\label{Eff-m_T}
 	
 \end{figure}
 
@@ -492,16 +522,37 @@ signal mass point  $m_{F}=140$GeV vs  $\Delta m=20$GeV
 % ------------------------------------------------------------------------------------------------
 
 \begin{frame}
-\section{Samples Selection}
-\frametitle{Selection}
-
+\frametitle{$m_T$ Selection}
 
 \begin{figure}[!h]
 	
 	\centering
-	\includegraphics[scale=0.45]{pictures/Selection/SigLT_NJet}
-	\caption{ Significance of the cut (type less-
-		than) for the number of Jets\label{}}
+	\includegraphics[scale=0.45]{pictures/Selection/m_T/Sig-m_T}
+	\caption{{\scriptsize Significance of the cut (type less-than) for $m_T(\mu,p_{T}^{Miss})$ . The maximum of $\mathcal{Z}$ is reached for $60$ GeV, but to take out the majority of the $W+jet$ BG events, the cut at $40$ GeV is preferred.}}
+	\label{Sig-m_T}
+	
+\end{figure}
+
+
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+\frametitle{$p_T(\mu)$ Selection}
+
+\begin{justify}
+	{\scriptsize Most signal events are concentrated at low values of $p_T$ as it was expected. It is chosen a less-than cut .}
+\end{justify}
+
+\begin{figure}[!h]
+	
+	\centering
+	\includegraphics[width=0.7\textwidth, height=0.6\textheight]{pictures/Selection/P_TMu/All-P_TMu}
+	\caption{{\scriptsize $p_T(\mu)$ histograms for the signal and each background sample. The bin-width is 5 GeV. Besides the basic selection, the cut $M_T<40$ GeV was made.}}
+	\label{P_TMu}
 	
 \end{figure}
 
@@ -512,16 +563,88 @@ signal mass point  $m_{F}=140$GeV vs  $\Delta m=20$GeV
 % ------------------------------------------------------------------------------------------------
 
 \begin{frame}
-\section{Samples Selection}
-\frametitle{Selection}
-
-
+\frametitle{$p_T(\mu)$ Selection}
 \begin{figure}[!h]
-	
+
 \centering
-\includegraphics[scale=0.45]{pictures/Selection/SigLT_P_Tmu}
-\caption{Significance of the cut (type less-
-	than) for the $p_T(\mu)$\label{}}
+\includegraphics[scale=0.45]{pictures/Selection/P_TMu/Sig-P_TMu}
+\caption{{\scriptsize Significance of the cut (type less-than) for $p_T(\mu,)$. The $\mathcal{Z}$ curve reach the maximum at $p_T(\mu,)<20$ GeV and falls fast for higher values.}}
+\label{Sig-P_TMu}
+
+\end{figure}
+
+
+\end{frame}
+
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{$p_T(\mu)$ Selection}
+\begin{figure}[!h]
+	
+	\centering
+	\includegraphics[scale=0.4]{pictures/Selection/P_TMu/Eff-P_TMu}
+	\caption{{\scriptsize$p_T(\mu)$ efficiency plots for the signal and each background sample. For the cut suggested by Figure \ref{Sig-P_TMu}, the signal reach more than $80\%$ of efficiency, while the main BG is less than $40\%$, confirming the cut based on the significance.}}
+	\label{Eff-P_TMu}
+	
+\end{figure}
+
+
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+\frametitle{$N(Jet)$ Selection}
+\begin{justify}
+	{\scriptsize The signal, W+jets and WZ BG have a similar behavior, but in order to reduce the Single Top events a less-than cut can be used.}
+\end{justify}
+
+\begin{figure}[!h]
+	
+	\centering
+	\includegraphics[width=0.75\textwidth, height=0.65\textheight]{pictures/Selection/NJet/All-NJet}
+	\caption{{\scriptsize $N(Jet)$ histograms. The cuts applied are: the basic selection, $M_T<40$ GeV and $p_T(\mu,)<20$~GeV.}}
+	\label{All-NJet}
+	
+\end{figure}
+
+
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{$N(Jet)$ Selection}
+\begin{figure}[!h]
+	
+	\centering
+	\includegraphics[scale=0.45]{pictures/Selection/NJet/Sig-NJet}
+	\caption{{\scriptsize The Significance for $N(Jet)$ reach its maximum at $N(Jet)< 4$.}}
+	\label{Sig-NJet}
+	
+\end{figure}
+
+
+\end{frame}
+
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{$N(Jet)$ Selection}
+\begin{figure}[!h]
+
+\centering
+\includegraphics[scale=0.45]{pictures/Selection/NJet/Eff-NJet}
+\caption{{\scriptsize The $N(Jet)$ efficiencies. For the signal at  $N(Jet)< 4$ the efficiency is almost $100\%$ while for the main BG is less than $80\%$.}}
+\label{Eff-NJet}
 
 \end{figure}
 
@@ -529,54 +652,121 @@ signal mass point  $m_{F}=140$GeV vs  $\Delta m=20$GeV
 \end{frame}
 
 % ------------------------------------------------------------------------------------------------
+
+% ------------------------------------------------------------------------------------------------
+
+
+%%\begin{frame}
+%%\frametitle{$p_T(Jet)$ Selection}
+%%\begin{figure}[!h]
+	
+%%	\centering
+%	\includegraphics[width=0.9\textwidth, height=0.8\textheight]{pictures/Selection/P_TJet/All-p_TJet}
+%	\caption{}
+%	\label{All-p_TJet}
+%	
+%\end{figure}
+
+
+%\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+
+%\begin{frame}
+%\frametitle{$p_T(Jet)$ Selection}
+%\begin{figure}[!h]
+%
+%\centering
+%\includegraphics[scale=0.45]{pictures/Selection/P_TJet/Eff-p_TJet}
+%\caption{ }
+%\label{Eff-p_TJet}
+
+%\end{figure}
+
+
+%\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+
+%\begin{frame}
+%\frametitle{$p_T(Jet)$ Selection}
+%\begin{figure}[!h]
+
+%\centering
+%\includegraphics[scale=0.45]{pictures/Selection/P_TJet/Sig-p_TJet}
+%\caption{}
+%\label{Sig-p_TJet}
+
+%\end{figure}
+
+
+%\end{frame}
+
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
 \begin{frame}
-
 \frametitle{Selection}
-
+\begin{justify}
+	In the \textbf{Table \ref{WeightsSamplesTable}} are summarized the cuts made in order to maximize the significance of the signal, along with the accumulated efficiency after cut.  
+	
+\end{justify}
 
 \begin{table}[]
-	{\centering
-		\begin{tabular}{ll}
-			\hline
-			\textbf{Cut}                       & \textbf{Selection}                                           \\\hline
-			Trigger                            & MonoJet  \\
-			$N(\mu)$                           & 1                                                            \\
-			$p_T(\mu)$                         & \textless{}30 GeV                                            \\
-			$N(Jet)$                           & \textless{}3                                                 \\
-			%$p_T(LeadingJet)$                  & \textless{}20                                                \\
-			m\_T(p\_T(\textbackslash{}mu),MET) & \textless{}60                                             \\ \hline
-		\end{tabular}
-		
-		\caption{Cuts, monoJet triggers means MET\textgreater{}110 GeV, MHT\textgreater{}110 GeV}
-		\label{CutsTable}
-	}
+	\includegraphics[width=1.0\textwidth]{pictures/Selection/TablaCortes}
+	
+	\caption{{\scriptsize Weights for the MC samples, based on the expected events, number of MC samples generated for the study, weights for the samples asuming a $100\text{fb}^{-1}$ of luminosity, the number of events , and the accumulated efficiency after each cut.}}
+	\label{WeightsSamplesTable}
 \end{table}
-
-
 
 \end{frame}
 
 % ------------------------------------------------------------------------------------------------
+
+% ------------------------------------------------------------------------------------------------
 \begin{frame}
+\section{Results}
 \frametitle{Results}
 
 \begin{figure}
 	\centering
+
 	\includegraphics[scale=0.45]{pictures/LumiToExclusionSigma3_BRmu25tau75} 
-	\caption{3 $\sigma$ reach for $m_{F}$ vs  $\Delta m$ parameter space for various luminosity in $1000\text{fb}^{-1}$. }
+	\caption{3 $\sigma$ reach for $m_{F}$ vs  $\Delta m$ parameter space for various luminosity in $1000\text{fb}^{-1}$. The Yellow line is $3000~\text{fb}^{-1}$}
 	\label{results}
 \end{figure}
 
 \end{frame}
 
 % ------------------------------------------------------------------------------------------------
+
 % ------------------------------------------------------------------------------------------------
 
 \begin{frame}
 \frametitle{Exclusion Potential}
+\begin{justify}
 
-We want to exclude the region of parameters of the model, which is still unexplored Figure \ref{fig7}, the intersection between the regions in Figures \ref{fig7} and \ref{results} shows the exclusion potential for the study.
-The exclusion is carried out assuming that what is going to be observed is only the standard model
+The exclusion potential of the study is the region of parameters of the model in were at $3000~\text{fb}^{-1}$ the model reach $3\sigma$. part of this region is still unexplored (see \textbf{Figure \ref{fig7}}), the intersection between the regions in \textbf{Figures \ref{fig7}} and \textbf{\ref{results}} is shown in the next slide (Figure \ref{results2}).
+
+The exclusion is carried out assuming that what is going to be observed is the yields due to the SM alone.
+\end{justify}
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+\begin{frame}
+
+\frametitle{Exclusion Potential}
+
+\begin{figure}
+	\centering
+	
+	\includegraphics[scale=0.45]{pictures/LimitPlotsTesis_WithData} 
+	\caption{Exclusion potential of the model. The region left of the yellow line is where the model reach $3\sigma$ of significance at $3000~\text{fb}^{-1}$ of luminosity}
+	\label{results2}
+\end{figure}
 
 \end{frame}
 
@@ -593,7 +783,7 @@ The exclusion is carried out assuming that what is going to be observed is only 
 
 		\item Although the model have been analyzed. there is still the region of the parameter space ($\Delta m=m_{F}-m_S\lesssim 50\ \text{GeV}$) with exclusion potential.
 		\item The full dark matter content may be explained either by freeze-out at higher redshifts, or by another dark matter content.
-		\item  We can obtain exclusion sensitivity over a large region of parameter has not yet been covered by any other search.
+		\item  We can obtain exclusion sensitivity over a large region of parameter space has not yet been covered by any other search.
 	\end{enumerate}
 
 \end{exampleblock}
@@ -608,34 +798,9 @@ The exclusion is carried out assuming that what is going to be observed is only 
 \ThankYouFrame
 
 % ------------------------------------------------------------------------------------------------
+
 % ------------------------------------------------------------------------------------------------
 \section{Backup}
-\begin{frame}
-\frametitle{MC Validation}
-{\justifying
-To validate the W+Jets background we use the Table 1 from [CMS-PAS-SMP-16-005], where they have ${\sqrt{s}=13}$ TeV proton-proton MC samples normalized to an
-integrated luminosity of 2.5 $ \text{fb}^{-1}$
-}
-\begin{table}[]
-	\resizebox{\textwidth}{!}{\begin{tabular}{lllll}
-	
-		\hline
-		& $N_{Jets}=1$ & $N_{Jets}=2$ & $N_{Jets}=3$ & $N_{Jets}=4$ \\\hline
-		CMS-PAS-SMP-16-005 & 1854568      & 384856       & 78271        & 14577        \\
-		VLF-study          & 370200       & 345520       & 137282       & 62471        \\
-		Diff               & 1484368      & 39336        & -59011       & -47894      \\\hline
-	
-	\end{tabular}}
-	\caption{{\scriptsize  Number of events simulation as a function of the exclusive jet multiplicity. Events are required to have exactly one muon and one or more jets for the $W \rightarrow \mu\nu +jets$ production, muons are required to have $p_T > 25$ GeV and $|\eta| < 2.4$, and jets are required to have $p_T > 30$ GeV, and last $M_T > 50$ GeV}}
-\end{table}
-
-Currently looking into it.
-
-\end{frame}
-
-
-
-
 % ------------------------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{Relation with Fermi LAT}
