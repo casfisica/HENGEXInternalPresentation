@@ -30,7 +30,9 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
-
+\usepackage{setspace}
+%\usepackage{setspace}
+%\renewcommand{\baselinestretch}{1.0} 
 % ------------------------------------------------------------------------------------------------
 \title{\textbf{ \textit{Simplest Fermion Vector-Like Portal Dark Matter model:}}}
 \subtitle{{\small 	Search in the compressed mass region at the CMS experiment}}
@@ -187,18 +189,19 @@ The VLF model introduce a vector-like charged fermion with $SU(2)_L$ singlet, a 
 \begin{equation}\nonumber
 \mathcal{L} = \mathcal{L}_{SM} +  m_F \bar{F}F + ( Y_\ell S \bar{F}\ell_R + {\rm h.c.} ) + V(S,H)~;
 \end{equation}\label{EQ}
-
 $m_F$ is the singlet fermion mass parameter, $\ell_R$ are the SM right-handed lepton fields, $Y_\ell$ 
 are the Yukawa couplings. The contribution to the scalar potential is given by
-
 \begin{equation}\nonumber
 V(S,H) = \frac{m_S^2}{2} S^2 + \frac{\lambda_S}{4} S^4 + \lambda_{SH} S^2|H|^2 ~,
 \end{equation}
-
 with scalar mass parameter $m_S$ and quartic couplings $\lambda_{S}$ and $\lambda_{SH}$.
-
-
 \end{justify}
+
+\begin{spacing}{0.5}
+	{\tiny\textbf{Toma, T.} Internal bremsstrahlung signature of real scalar dark matter and consistency with thermal relic density. Phys. Rev. Lett. 111, (2013).}
+	\vspace{4 mm}
+\end{spacing}
+
 
 \end{frame}
 % ------------------------------------------------------------------------------------------------
@@ -225,9 +228,7 @@ The kinetic terms for the vector-like charged fermion reads as follows
 \mathcal{L} ~ \bar{F}(D_{\mu}\gamma^{\mu})F,
 \end{equation}
 
-consequently the most straightforward production and decay process at the LHC
-is pair-production of vector-like fermions,
-followed by their subsequent decay to a lepton and the DM scalar.
+consequently the most straightforward production at the LHC is pair-production of  vector-like fermions , followed by their subsequent decay to a lepton and the DM scalar.
 
 
 }}
@@ -314,7 +315,7 @@ The process chows in Figure \ref{TowFerminon}, leads to the signature opposite s
 \begin{figure}[!tbp]
 \centering
 \includegraphics[width=0.85\textwidth]{pictures/LimitPlotsTesis}% while the combined upper region with light and dark magenta are the prospects for Cherenkov Telescope Array.
-\caption{{\scriptsize $m_F$ vs $\Delta m$. The gray upper region is excluded by Fermi-LAT H.E.E.S, wile the red area is the where the relic density is not satisfy by the model}}
+\caption{{\scriptsize $m_F$ vs $\Delta m$. The gray upper region is excluded by Fermi-LAT and H.E.E.S experiments, while the red area is the where the relic density is not satisfy by the model}}
 \label{fig7}
 \end{figure}
 
@@ -342,122 +343,23 @@ The backgrounds process for this search is the single top, the di-boson $WZ$, an
 \section{Samples Generation}
 \frametitle{Samples Generation}
 \begin{justify}
-The Monte Carlo(MC) collision samples for the signal and the BackGrounds (BG) were generated using a combination of MadGraph (version 2.5.5 ) ~%\cite{Alwall2011} 
-for the event generation, Pythia (version 8.233)~  %\cite{Sjostrand:2014zea} 
-for the hadronization and Delphes (version 3.4.1)~  %\cite{deFavereau:2013fsa} 
+The Monte Carlo(MC) collision samples for the signal and the BackGrounds (BG) were generated using a combination of MadGraph (version 2.5.5 )$^1$ %\cite{Alwall2011} 
+for the event generation, Pythia (version 8.233)$^2$ 
+for the hadronization and Delphes (version 3.4.1)$^3$  %\cite{deFavereau:2013fsa} 
 for the detector effect emulation.
 \end{justify}
 
-\end{frame}
-% ------------------------------------------------------------------------------------------------
+\begin{spacing}{0.5}
+{\tiny
+1. \textbf{Alwall, J. et al} T. MadGraph 5: going beyond. J. High Energy Phys. 2011, 128 (2011).
 
-\begin{frame}
-\frametitle{Background Tunig}
-{\small To generate the background we use the tunes extract for the data from CMS at the reference [CMS-PAS-GEN-17-001] }
+2. \textbf{Sjöstrand, T. et al.} An Introduction to PYTHIA 8.2. Comput. Phys. Commun. 191, 159–177 (2015).
 
-{\scriptsize
-\begin{table}[]
-\begin{tabular}{ll}
-\hline
-\textbf{PYTHIA parameter}                & \textbf{Value} \\\hline
-PDF Set                                  & NNPDF3.1       \\
-$\alpha_S(MZ)$                           & 0.118          \\
-SPACESHOWER:RAPIDITYORDER                & on             \\
-MULTIPARTONINTERACTIONS:ECMREF {[}GeV{]} & 7000           \\
-$\alpha^{ISR}_S$                         & 0.118/NLO      \\
-$\alpha^{FSR}_S$                         & 0.118/NLO      \\
-$\alpha^{MPI}_S$                         & 0.118/NLO      \\
-$\alpha^{ME}_S$                          & 0.118/NLO      \\
-MULTIPARTONINTERACTIONS:PT0REF {[}GeV{]} & 1.41           \\
-MULTIPARTONINTERACTIONS:ECMPOW           & 0.03344        \\
-MULTIPARTONINTERACTIONS:CORERADIUS       & 0.7634         \\
-MULTIPARTONINTERACTIONS:COREFRACTION     & 0.63           \\
-COLORRECONNECTION:RANGE                  & 5.176          \\
-$\chi^2/dof$                             & 1.04           \\\hline
-\end{tabular}
-\caption{Pythia 8 parameter values }
-\label{PythiaTune}
-
-\end{table}
+3. \textbf{De Favereau, J. et al}. DELPHES 3, A modular framework for fast simulation of a generic collider experiment. JHEP 02, 57 (2014).
 }
-
+\end{spacing}
 \end{frame}
 
-
-% ------------------------------------------------------------------------------------------------
-
-\begin{frame}
-\frametitle{Background Tuning}
-After the tunig we use Rivet[] over the analysis [PhysRevD.96.072005] to compare 
-
-\begin{figure}[!h]
-
-\begin{subfigure}[b]{0.44\textwidth}
-\centering
-\includegraphics[width=\textwidth]{pictures/MCTunig/EXCLUSIVE_JET_MULTIPLICITY}
-\caption{\label{EXCLUSIVE_JET_MULTIPLICITYTune}}
-\end{subfigure}
-\begin{subfigure}[b]{0.44\textwidth}
-\centering
-\includegraphics[width=\textwidth]{pictures/MCTunig/EXCLUSIVE_JET_MULTIPLICITY_Nelson}
-\caption{\label{EXCLUSIVE_JET_MULTIPLICITY}}
-\end{subfigure}
-\caption{ \justifying{ Differential cross section measurement for the exclusive jet multiplicities with tune (\subref{EXCLUSIVE_JET_MULTIPLICITYTune}) and with out tune (\subref{EXCLUSIVE_JET_MULTIPLICITY})} }
-\end{figure}
-
-
-\end{frame}
-
-% ------------------------------------------------------------------------------------------------
-% ------------------------------------------------------------------------------------------------
-
-\begin{frame}
-\frametitle{Background Tuning}
-
-
-\begin{figure}[!h]
-
-\begin{subfigure}[b]{0.44\textwidth}
-\centering
-\includegraphics[width=\textwidth]{pictures/MCTunig/FIRST_LEADING_JET_PT}
-\caption{\label{FIRST_LEADING_JET_PTTune}}
-\end{subfigure}
-\begin{subfigure}[b]{0.44\textwidth}
-\centering
-\includegraphics[width=\textwidth]{pictures/MCTunig/FIRST_LEADING_JET_PT_Nelson}
-\caption{\label{FIRST_LEADING_JET_PT}}
-\end{subfigure}
-\caption{ \justifying{ Differential cross section measurement for the exclusive jet multiplicities with tune (\subref{FIRST_LEADING_JET_PTTune}) and with out tune (\subref{FIRST_LEADING_JET_PT})} }
-\end{figure}
-
-
-\end{frame}
-
-% ------------------------------------------------------------------------------------------------
-% ------------------------------------------------------------------------------------------------
-
-\begin{frame}
-\frametitle{Background Tuning}
-
-\begin{figure}[!h]
-
-\begin{subfigure}[b]{0.44\textwidth}
-\centering
-\includegraphics[width=\textwidth]{pictures/MCTunig/HT}
-\caption{\label{HTTune}}
-\end{subfigure}
-\begin{subfigure}[b]{0.44\textwidth}
-\centering
-\includegraphics[width=\textwidth]{pictures/MCTunig/HT_Nelson}
-\caption{\label{HT}}
-\end{subfigure}
-\caption{ \justifying{ Differential cross section measurement for the jets HT for at least 1 jet with tune (\subref{HTTune}) and with out tune (\subref{HT})} }
-\end{figure}
-
-
-\end{frame}
-
-% ------------------------------------------------------------------------------------------------
 % ------------------------------------------------------------------------------------------------
 
 \begin{frame}
@@ -801,6 +703,117 @@ The exclusion is carried out assuming that what is going to be observed is the y
 
 % ------------------------------------------------------------------------------------------------
 \section{Backup}
+
+% ------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Background Tunig}
+{\small To generate the background we use the tunes extract for the data from CMS at the reference [CMS-PAS-GEN-17-001] }
+
+{\scriptsize
+	\begin{table}[]
+		\begin{tabular}{ll}
+			\hline
+			\textbf{PYTHIA parameter}                & \textbf{Value} \\\hline
+			PDF Set                                  & NNPDF3.1       \\
+			$\alpha_S(MZ)$                           & 0.118          \\
+			SPACESHOWER:RAPIDITYORDER                & on             \\
+			MULTIPARTONINTERACTIONS:ECMREF {[}GeV{]} & 7000           \\
+			$\alpha^{ISR}_S$                         & 0.118/NLO      \\
+			$\alpha^{FSR}_S$                         & 0.118/NLO      \\
+			$\alpha^{MPI}_S$                         & 0.118/NLO      \\
+			$\alpha^{ME}_S$                          & 0.118/NLO      \\
+			MULTIPARTONINTERACTIONS:PT0REF {[}GeV{]} & 1.41           \\
+			MULTIPARTONINTERACTIONS:ECMPOW           & 0.03344        \\
+			MULTIPARTONINTERACTIONS:CORERADIUS       & 0.7634         \\
+			MULTIPARTONINTERACTIONS:COREFRACTION     & 0.63           \\
+			COLORRECONNECTION:RANGE                  & 5.176          \\
+			$\chi^2/dof$                             & 1.04           \\\hline
+		\end{tabular}
+		\caption{Pythia 8 parameter values }
+		\label{PythiaTune}
+		
+	\end{table}
+}
+
+\end{frame}
+
+
+% ------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Background Tuning}
+After the tunig we use Rivet[] over the analysis [PhysRevD.96.072005] to compare 
+
+\begin{figure}[!h]
+
+\begin{subfigure}[b]{0.44\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{pictures/MCTunig/EXCLUSIVE_JET_MULTIPLICITY}
+	\caption{\label{EXCLUSIVE_JET_MULTIPLICITYTune}}
+\end{subfigure}
+\begin{subfigure}[b]{0.44\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{pictures/MCTunig/EXCLUSIVE_JET_MULTIPLICITY_Nelson}
+	\caption{\label{EXCLUSIVE_JET_MULTIPLICITY}}
+\end{subfigure}
+\caption{ \justifying{ Differential cross section measurement for the exclusive jet multiplicities with tune (\subref{EXCLUSIVE_JET_MULTIPLICITYTune}) and with out tune (\subref{EXCLUSIVE_JET_MULTIPLICITY})} }
+\end{figure}
+
+
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Background Tuning}
+
+
+\begin{figure}[!h]
+
+\begin{subfigure}[b]{0.44\textwidth}
+\centering
+\includegraphics[width=\textwidth]{pictures/MCTunig/FIRST_LEADING_JET_PT}
+\caption{\label{FIRST_LEADING_JET_PTTune}}
+\end{subfigure}
+\begin{subfigure}[b]{0.44\textwidth}
+\centering
+\includegraphics[width=\textwidth]{pictures/MCTunig/FIRST_LEADING_JET_PT_Nelson}
+\caption{\label{FIRST_LEADING_JET_PT}}
+\end{subfigure}
+\caption{ \justifying{ Differential cross section measurement for the exclusive jet multiplicities with tune (\subref{FIRST_LEADING_JET_PTTune}) and with out tune (\subref{FIRST_LEADING_JET_PT})} }
+\end{figure}
+
+
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Background Tuning}
+
+\begin{figure}[!h]
+
+\begin{subfigure}[b]{0.44\textwidth}
+\centering
+\includegraphics[width=\textwidth]{pictures/MCTunig/HT}
+\caption{\label{HTTune}}
+\end{subfigure}
+\begin{subfigure}[b]{0.44\textwidth}
+\centering
+\includegraphics[width=\textwidth]{pictures/MCTunig/HT_Nelson}
+\caption{\label{HT}}
+\end{subfigure}
+\caption{ \justifying{ Differential cross section measurement for the jets HT for at least 1 jet with tune (\subref{HTTune}) and with out tune (\subref{HT})} }
+\end{figure}
+
+
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+
 % ------------------------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{Relation with Fermi LAT}
@@ -810,7 +823,7 @@ Gamma-ray from the Galactic center measured these type of models could explain F
 \begin{figure}
 \centering
 \includegraphics[scale=0.3]{pictures/Bremsstrahlung} 
-\caption{Internal Bremsstrahlung processes of (real) scalar DM. From [Phys Rev Lett. 2013 Aug 30;111(9):091301.] }
+\caption{Internal Bremsstrahlung processes of (real) scalar DM. From [Toma, T. Phys. Rev. Lett. 111, 91301 (2013)] }
 \label{fig:Brem}
 \end{figure}
 
@@ -822,8 +835,8 @@ Gamma-ray from the Galactic center measured these type of models could explain F
 \frametitle{Similar Searches}
 {\footnotesize
 \begin{itemize}
-\item Search for top squark pair production in pp collisions at $sqrt(s) = 13$ TeV using single lepton events (arXiv:1706.04402) \ref{04402}
-\item Search for top squarks decaying via four-body or chargino-mediated modes in single-lepton final states in proton-proton collisions at $sqrt(s) = 13$ TeV (arXiv:1805.05784)
+\item Search for top squark pair production in pp collisions at $sqrt(s) = 13$ TeV using single lepton events [J. High Energy Phys. 2017, 19]
+\item Search for top squarks decaying via four-body or chargino-mediated modes in single-lepton final states in proton-proton collisions at $sqrt(s) = 13$ TeV [J. High Energy Phys. 2018, 65]
 
 \end{itemize}
 }
